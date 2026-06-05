@@ -68,7 +68,8 @@ lucid_vehicle_intelligence_mcp_orchestrator/
 
 1. **Clone and navigate into the project directory:**
    ```bash
-   cd lucid_mcp_server
+   cd lucid_vehicle_intelligence_mcp_orchestrator/
+
    ```
 
 2. **Install dependencies:**

@@ -46,7 +46,7 @@ Telemetry Stream ──> [ FastAPI Ingestion Layer ]
 ## Directory Structure
 
 ```text
-lucid_mcp_server/
+lucid_vehicle_intelligence_mcp_orchestrator/
 ├── infrastructure/
 │   ├── database.py         # Async connection profiles for TimescaleDB and Redis
 │   └── vector_store.py     # FAISS vector database mapping behavioral baselines

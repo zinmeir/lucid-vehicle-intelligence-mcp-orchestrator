@@ -13,9 +13,9 @@ class DatabaseManager:
         self.redis_client = redis.from_url(self.redis_url, decode_responses=True)
         try:
             self.db_pool = await asyncpg.create_pool(self.db_url)
-            print("✅ Connected to TimescaleDB & Redis")
+            print(" Connected to TimescaleDB & Redis")
         except Exception as e:
-            print(f"⚠️ Database connection failed (Mocking enabled): {e}")
+            print(f" Database connection failed (Mocking enabled): {e}")
 
     async def cache_vehicle_state(self, vehicle_id: str, state_data: dict):
         if self.redis_client:

@@ -30,11 +30,11 @@ async def simulate_vehicle(vehicle_id: str, client: httpx.AsyncClient):
         await asyncio.sleep(random.uniform(0.5, 2.0))
 
 async def main():
-    print("🚗 Starting Fleet Telemetry Simulation...")
+    print("Starting Fleet Telemetry Simulation...")
     async with httpx.AsyncClient() as client:
         tasks = [simulate_vehicle(vid, client) for vid in VEHICLES]
         await asyncio.gather(*tasks)
-    print("🛑 Simulation Complete.")
+    print("Simulation Complete.")
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -4,12 +4,12 @@ import random
 from datetime import datetime
 
 API_URL = "http://127.0.0.1:8000/telemetry/ingest"
-VEHICLES = ["V-TESLA-001", "V-LUCID-002", "V-WAYMO-003"]
+VEHICLES = ["V-LUCID-GRAVITY", "V-LUCID-AIR-TOURING", "V-LUCID-AIR-SAPPHIRE"]
 
 async def simulate_vehicle(vehicle_id: str, client: httpx.AsyncClient):
     base_temp = 85.0
     for _ in range(10):
-        if vehicle_id == "V-WAYMO-003":
+        if vehicle_id == "V-LUCID-GRAVITY-001":
             base_temp += random.uniform(2.0, 5.0) 
             
         payload = {

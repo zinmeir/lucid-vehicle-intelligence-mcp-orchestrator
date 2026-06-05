@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+redis
+asyncpg
+faiss-cpu
+numpy
+httpx

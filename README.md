@@ -87,7 +87,7 @@ lucid_vehicle_intelligence_mcp_orchestrator/
 
 ### Option 2: Full Enterprise Deploy (Docker Containerized)
 
-To spin up the entire production environment—including the primary API server, dedicated Redis cache instance, and TimescaleDB engine—simply execute:
+To spin up the entire production environment including the primary API server, dedicated Redis cache instance, and TimescaleDB engine, simply execute:
 
 ```bash
 docker-compose up --build
